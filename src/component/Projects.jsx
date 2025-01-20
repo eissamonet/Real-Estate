@@ -12,12 +12,13 @@ const updateCardsToShow = () => {
         setCardsToShow(projectsData.length);
     }else{
         setCardsToShow(1)
-    };
+    }
+};
     updateCardsToShow();
 
     window.addEventListener('resize', updateCardsToShow);
     return () => window.removeEventListener('resize', updateCardsToShow);
-}
+
 },[])
 
 const nextProject = () => {
