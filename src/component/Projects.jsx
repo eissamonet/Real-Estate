@@ -1,5 +1,5 @@
 import React from 'react'
-import { assets } from '../assets/assets'
+import { assets, projectsData } from '../assets/assets'
 
 const Projects = () => {
   return (
@@ -20,6 +20,15 @@ const Projects = () => {
     </div>
 
     {/* project slider container */}
+    <div>
+        <div>
+            {projectsData.map((project, index) => (
+                <div key={index}>
+                <img src={project.image} alt={project.title}/>
+                </div>
+            ))}
+        </div>
+    </div>
 
     </div>
   )
