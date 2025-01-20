@@ -13,7 +13,7 @@ const updateCardsToShow = () => {
     }else{
         setCardsToShow(1)
     }
-};
+}
     updateCardsToShow();
 
     window.addEventListener('resize', updateCardsToShow);
@@ -58,8 +58,8 @@ const prevProject = () => {
                         <h2 className='text-xl font-semibold text-gray-800'>
                             {project.title}
                         </h2>
-                        <p className='text-gray-500 text:sm'>
-                            {project.price} <span></span> {project.location}
+                        <p className='text-gray-400 text:sm'>
+                            {project.price} <span className='px-1'>|</span> {project.location}
                         </p>
                     </div>
 
